@@ -8,12 +8,18 @@ var _               = require('lodash'),
     pingList;
 
 // ToDo: Make this configurable
+//http://blogsearch.google.com/ping/RPC2(谷歌的)
+// 改成
+// http://ping.baidu.com/ping/RPC2(百度的)
+
 pingList = [{
-    host: 'blogsearch.google.com',
-    path: '/ping/RPC2'
+    host: 'ping.baidu.com',
+    path: '/ping/RPC2',
+    method:'weblogUpdates.extendedPing'
 }, {
     host: 'rpc.pingomatic.com',
-    path: '/'
+    path: '/',
+    method:'weblogUpdate.ping'
 }];
 
 function ping(post) {
@@ -35,25 +41,25 @@ function ping(post) {
     }
 
     // Build XML object.
-    pingXML = xml({
-        methodCall: [{
-            methodName: 'weblogUpdate.ping'
-        }, {
-            params: [{
-                param: [{
-                    value: [{
-                        string: title
-                    }]
-                }]
-            }, {
-                param: [{
-                    value: [{
-                        string: url
-                    }]
-                }]
-            }]
-        }]
-    }, {declaration: true});
+    // pingXML = xml({
+    //     methodCall: [{
+    //         methodName: 'weblogUpdate.ping'
+    //     }, {
+    //         params: [{
+    //             param: [{
+    //                 value: [{
+    //                     string: title
+    //                 }]
+    //             }]
+    //         }, {
+    //             param: [{
+    //                 value: [{
+    //                     string: url
+    //                 }]
+    //             }]
+    //         }]
+    //     }]
+    // }, {declaration: true});
 
     // Ping each of the defined services.
     _.each(pingList, function (pingHost) {
@@ -65,6 +71,28 @@ function ping(post) {
             req;
 
         req = http.request(options);
+
+        pingXML = xml({
+            methodCall: [{
+                methodName: pingHost.method
+            }, {
+                params: [{
+                    param: [{
+                        value: [{
+                            string: title
+                        }]
+                    }]
+                }, {
+                    param: [{
+                        value: [{
+                            string: url
+                        }]
+                    }]
+                }]
+            }]
+        }, {declaration: true});
+
+
         req.write(pingXML);
         req.on('error', function handleError(error) {
                 errors.logError(
