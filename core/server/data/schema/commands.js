@@ -68,6 +68,7 @@ function dropUnique(table, column, transaction) {
 function createTable(table, transaction) {
     return (transaction || db.knex).schema.createTableIfNotExists(table, function (t) {
         var columnKeys = _.keys(schema[table]);
+        t.charset('utf8'); //mysql 不出现乱码
         _.each(columnKeys, function (column) {
             return addTableColumn(table, t, column);
         });
