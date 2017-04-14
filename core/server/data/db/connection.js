@@ -33,7 +33,7 @@ function configure(dbConfig) {
         // this sets the timezone to UTC only for the connection!
         dbConfig.pool = _.defaults({
             afterCreate: function (connection, callback) {
-                connection.query('set timezone=\'UTC\'', function (err) {
+                connection.query('set timezone=\'Asia/Hong_Kong\'', function (err) {
                     callback(err, connection);
                 });
             }
@@ -45,7 +45,7 @@ function configure(dbConfig) {
     }
 
     if (client === 'mysql') {
-        dbConfig.connection.timezone = 'UTC';
+        dbConfig.connection.timezone = 'Asia/Hong_Kong';
     }
 
     return dbConfig;

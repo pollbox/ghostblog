@@ -1,5 +1,5 @@
 var moment = require('moment-timezone');
-
+var moment_local=require('moment');
 /**
  * force UTC
  *   - you can require moment or moment-timezone, both is configured to UTC
@@ -7,4 +7,5 @@ var moment = require('moment-timezone');
  *   - be careful when not working with models, every value from the native JS Date is local TZ
  *   - be careful when you work with date operations, therefor always wrap a date into moment
  */
-moment.tz.setDefault('UTC');
+moment.tz.setDefault('Asia/Hong_Kong');
+moment_local.locale('zh-cn');

@@ -1,13 +1,13 @@
 /* global Intl */
 
-var supportedLocales    = ['en'],
+var supportedLocales    = ['en','zh_cn'],
     _                   = require('lodash'),
     fs                  = require('fs'),
     chalk               = require('chalk'),
     MessageFormat       = require('intl-messageformat'),
 
     // TODO: fetch this dynamically based on overall blog settings (`key = "defaultLang"` in the `settings` table
-    currentLocale       = 'en',
+    currentLocale       = 'zh_cn',
     blos,
     I18n;
 

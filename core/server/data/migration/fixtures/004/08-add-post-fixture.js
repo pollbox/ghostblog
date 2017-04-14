@@ -9,7 +9,7 @@ var models  = require('../../../../models'),
         featured:         false,
         page:             false,
         status:           'draft',
-        language:         'en_US',
+        language:         'zh_CN',
         meta_title:       null,
         meta_description: null
     },

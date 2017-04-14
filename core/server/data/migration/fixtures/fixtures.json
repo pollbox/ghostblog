@@ -21,7 +21,7 @@
             "name": "Tag",
             "entries": [
                 {
-                    "name":             "Getting Started",
+                    "name":             "入门",
                     "slug":             "getting-started",
                     "description":      null,
                     "parent_id":        null,
@@ -34,17 +34,17 @@
             "name": "Client",
             "entries": [
                 {
-                    "name":             "Ghost Admin",
+                    "name":             "Ghost 管理员",
                     "slug":             "ghost-admin",
                     "status":           "enabled"
                 },
                 {
-                    "name":             "Ghost Frontend",
+                    "name":             "Ghost 前端",
                     "slug":             "ghost-frontend",
                     "status":           "enabled"
                 },
                 {
-                    "name":             "Ghost Scheduler",
+                    "name":             "Ghost 调度",
                     "slug":             "ghost-scheduler",
                     "status":           "enabled",
                     "type":             "web"
@@ -56,19 +56,19 @@
             "entries": [
                 {
                     "name":             "Administrator",
-                    "description":      "Administrators"
+                    "description":      "管理员"
                 },
                 {
                     "name":             "Editor",
-                    "description":      "Editors"
+                    "description":      "编辑员"
                 },
                 {
                     "name":             "Author",
-                    "description":      "Authors"
+                    "description":      "作者"
                 },
                 {
                     "name":             "Owner",
-                    "description":      "Blog Owner"
+                    "description":      "博客所有者"
                 }
             ]
         },
@@ -76,217 +76,217 @@
             "name": "Permission",
             "entries": [
                 {
-                    "name": "Export database",
+                    "name": "导出数据库",
                     "action_type": "exportContent",
                     "object_type": "db"
                 },
                 {
-                    "name": "Import database",
+                    "name": "导入数据库",
                     "action_type": "importContent",
                     "object_type": "db"
                 },
                 {
-                    "name": "Delete all content",
+                    "name": "删除所有内容",
                     "action_type": "deleteAllContent",
                     "object_type": "db"
                 },
                 {
-                    "name": "Send mail",
+                    "name": "发送邮件",
                     "action_type": "send",
                     "object_type": "mail"
                 },
                 {
-                    "name": "Browse notifications",
+                    "name": "浏览通知",
                     "action_type": "browse",
                     "object_type": "notification"
                 },
                 {
-                    "name": "Add notifications",
+                    "name": "添加通知",
                     "action_type": "add",
                     "object_type": "notification"
                 },
                 {
-                    "name": "Delete notifications",
+                    "name": "删除通知",
                     "action_type": "destroy",
                     "object_type": "notification"
                 },
                 {
-                    "name": "Browse posts",
+                    "name": "浏览帖子",
                     "action_type": "browse",
                     "object_type": "post"
                 },
                 {
-                    "name": "Read posts",
+                    "name": "阅读帖子",
                     "action_type": "read",
                     "object_type": "post"
                 },
                 {
-                    "name": "Edit posts",
+                    "name": "编辑帖子",
                     "action_type": "edit",
                     "object_type": "post"
                 },
                 {
-                    "name": "Add posts",
+                    "name": "添加帖子",
                     "action_type": "add",
                     "object_type": "post"
                 },
                 {
-                    "name": "Delete posts",
+                    "name": "删除帖子",
                     "action_type": "destroy",
                     "object_type": "post"
                 },
                 {
-                    "name": "Browse settings",
+                    "name": "浏览设置",
                     "action_type": "browse",
                     "object_type": "setting"
                 },
                 {
-                    "name": "Read settings",
+                    "name": "阅读设置",
                     "action_type": "read",
                     "object_type": "setting"
                 },
                 {
-                    "name": "Edit settings",
+                    "name": "编辑设置",
                     "action_type": "edit",
                     "object_type": "setting"
                 },
                 {
-                    "name": "Generate slugs",
+                    "name": "生成 slugs",
                     "action_type": "generate",
                     "object_type": "slug"
                 },
                 {
-                    "name": "Browse tags",
+                    "name": "浏览标签",
                     "action_type": "browse",
                     "object_type": "tag"
                 },
                 {
-                    "name": "Read tags",
+                    "name": "阅读标签",
                     "action_type": "read",
                     "object_type": "tag"
                 },
                 {
-                    "name": "Edit tags",
+                    "name": "编辑标签",
                     "action_type": "edit",
                     "object_type": "tag"
                 },
                 {
-                    "name": "Add tags",
+                    "name": "添加标签",
                     "action_type": "add",
                     "object_type": "tag"
                 },
                 {
-                    "name": "Delete tags",
+                    "name": "删除标签",
                     "action_type": "destroy",
                     "object_type": "tag"
                 },
                 {
-                    "name": "Browse themes",
+                    "name": "浏览主题",
                     "action_type": "browse",
                     "object_type": "theme"
                 },
                 {
-                    "name": "Edit themes",
+                    "name": "编辑主题",
                     "action_type": "edit",
                     "object_type": "theme"
                 },
                 {
-                    "name": "Upload themes",
+                    "name": "上传主题",
                     "action_type": "add",
                     "object_type": "theme"
                 },
                 {
-                    "name": "Download themes",
+                    "name": "下载主题",
                     "action_type": "read",
                     "object_type": "theme"
                 },
                 {
-                    "name": "Delete themes",
+                    "name": "删除主题",
                     "action_type": "destroy",
                     "object_type": "theme"
                 },
                 {
-                    "name": "Browse users",
+                    "name": "浏览用户",
                     "action_type": "browse",
                     "object_type": "user"
                 },
                 {
-                    "name": "Read users",
+                    "name": "阅读用户",
                     "action_type": "read",
                     "object_type": "user"
                 },
                 {
-                    "name": "Edit users",
+                    "name": "编辑用户",
                     "action_type": "edit",
                     "object_type": "user"
                 },
                 {
-                    "name": "Add users",
+                    "name": "添加用户",
                     "action_type": "add",
                     "object_type": "user"
                 },
                 {
-                    "name": "Delete users",
+                    "name": "删除用户",
                     "action_type": "destroy",
                     "object_type": "user"
                 },
                 {
-                    "name": "Assign a role",
+                    "name": "分配角色",
                     "action_type": "assign",
                     "object_type": "role"
                 },
                 {
-                    "name": "Browse roles",
+                    "name": "浏览角色",
                     "action_type": "browse",
                     "object_type": "role"
                 },
                 {
-                    "name": "Browse clients",
+                    "name": "浏览客户端",
                     "action_type": "browse",
                     "object_type": "client"
                 },
                 {
-                    "name": "Read clients",
+                    "name": "阅读客户",
                     "action_type": "read",
                     "object_type": "client"
                 },
                 {
-                    "name": "Edit clients",
+                    "name": "编辑客户端",
                     "action_type": "edit",
                     "object_type": "client"
                 },
                 {
-                    "name": "Add clients",
+                    "name": "添加客户端",
                     "action_type": "add",
                     "object_type": "client"
                 },
                 {
-                    "name": "Delete clients",
+                    "name": "删除客户端",
                     "action_type": "destroy",
                     "object_type": "client"
                 },
                 {
-                    "name": "Browse subscribers",
+                    "name": "浏览订阅者",
                     "action_type": "browse",
                     "object_type": "subscriber"
                 },
                 {
-                    "name": "Read subscribers",
+                    "name": "阅读订阅者",
                     "action_type": "read",
                     "object_type": "subscriber"
                 },
                 {
-                    "name": "Edit subscribers",
+                    "name": "修改订阅者",
                     "action_type": "edit",
                     "object_type": "subscriber"
                 },
                 {
-                    "name": "Add subscribers",
+                    "name": "添加订阅者",
                     "action_type": "add",
                     "object_type": "subscriber"
                 },
                 {
-                    "name": "Delete subscribers",
+                    "name": "删除订阅者",
                     "action_type": "destroy",
                     "object_type": "subscriber"
                 }

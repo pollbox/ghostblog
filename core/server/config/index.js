@@ -112,7 +112,7 @@ ConfigManager.prototype.set = function (config) {
         schedulingPath,
         subdir,
         assetHash,
-        timezone = 'Etc/UTC';
+        timezone = 'Asia/Hong_Kong';
 
     // CASE: remember existing timezone
     if (this._config.theme && this._config.theme.timezone) {

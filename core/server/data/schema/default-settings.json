@@ -33,7 +33,7 @@
             "defaultValue": ""
         },
         "defaultLang": {
-            "defaultValue": "en_US",
+            "defaultValue": "zh_CN",
             "validations": {
                 "isEmpty": false
             }
@@ -47,7 +47,7 @@
             }
         },
         "activeTimezone": {
-            "defaultValue": "Etc/UTC",
+            "defaultValue": "Asia/Hong_Kong",
             "validations": {
                 "isTimezone": true,
                 "isEmpty": false
