@@ -18,8 +18,8 @@
   "license": "MIT",
   "main": "./core/index",
   "scripts": {
-    "preinstall": "node core/server/utils/npm/preinstall.js",
-    "start": "node index",
+    "preinstall": "nodejs core/server/utils/npm/preinstall.js",
+    "start": "nodejs index",
     "test": "grunt validate --verbose"
   },
   "engines": {
