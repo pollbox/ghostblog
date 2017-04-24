@@ -83,6 +83,12 @@
         "twitter": {
             "defaultValue" : ""
         },
+        "weibo": {
+            "defaultValue": ""
+        },
+        "weixin": {
+            "defaultValue": ""
+        },
         "labs": {
             "defaultValue": "{}"
         },

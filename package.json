@@ -2,7 +2,11 @@
   "name": "ghost",
   "version": "0.11.7",
   "description": "Just a blogging platform.",
-  "author": "Ghost Foundation",
+  "author": {
+      "name": "pollbox",
+      "email": "pollbox@dingtalk.com",
+      "url": "https://ghostblog.cn"
+  },
   "homepage": "http://ghost.org",
   "keywords": [
     "ghost",

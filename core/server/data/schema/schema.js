@@ -38,6 +38,8 @@ module.exports = {
         location: {type: 'text', maxlength: 65535, nullable: true},
         facebook: {type: 'text', maxlength: 2000, nullable: true},
         twitter: {type: 'text', maxlength: 2000, nullable: true},
+        weibo: {type: 'text', maxlength: 2000, nullable: true},
+        weixin: {type: 'text', maxlength: 2000, nullable: true},
         accessibility: {type: 'text', maxlength: 65535, nullable: true},
         status: {type: 'string', maxlength: 150, nullable: false, defaultTo: 'active'},
         language: {type: 'string', maxlength: 6, nullable: false, defaultTo: 'zh_CN'},

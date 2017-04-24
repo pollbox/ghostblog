@@ -5,7 +5,7 @@
 
 ![Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.](https://cloud.githubusercontent.com/assets/120485/6626501/b2bb072c-c8ff-11e4-8e1a-2e78e68fd5c3.png)
 
-The project is maintained by a non-profit organisation called the **Ghost Foundation**, along with an amazing group of independent [contributors](https://github.com/TryGhost/Ghost/contributors). We're trying to make publishing software that changes the shape of online journalism.
+Ghost 目由非盈利性组织 **Ghost Foundation** 和一群优秀的独立[贡献者](https://github.com/TryGhost/Ghost/contributors)共同维护。我们正在尽最大努力让在线内容创作变得更好。
 
 - [Ghost.org](https://ghost.org)
 - [Latest Release](https://ghost.org/developers/)
@@ -15,31 +15,31 @@ The project is maintained by a non-profit organisation called the **Ghost Founda
 - [Feature Requests](http://ideas.ghost.org/)
 - [Dev Blog](http://dev.ghost.org)
 
-**NOTE: If you’re stuck, can’t get something working or need some help, please head on over and join our [Slack community](https://ghost.org/slack/) rather than opening an issue.**
+**注意：如果你在使用 Ghost 过程中遇到难题需要帮助，请尽量加入 [Slack 社区](https://ghost.org/slack/) 寻求帮助而不是在 Github 上新开一个 issue。**
 
 
 # Quick Start Install
 
-Make sure you've installed Node.js - We recommend the latest **Node v4 LTS** release. For other versions [click here](http://support.ghost.org/supported-node-versions/). May contain nuts.
+安装前请确保已经安装了 Node.js - 我们建议使用  **Node v4 LTS**  的最新版本。 [下载](http://support.ghost.org/supported-node-versions/).
 
-1. Download the [latest release](https://ghost.org/developers/) of Ghost
-1. Unzip in the location you want to install
-1. Fire up a terminal
-1. `npm install --production`
-1. Start Ghost!
-    - Local environment: `npm start`
-    - On a server: `npm start --production`
-1. `http://localhost:2368/ghost` :tada:
+1. 下载 [最新版](https://ghost.org/developers/) 的 Ghost
+1. 解压文件至你所希望的安装位置
+1.  启动一个命令行窗口
+1. 执行`npm install --production`命令
+1. 启动 Ghost!
+    - 本地环境: `npm start`
+    - 发布环境: `npm start --production`
+1.启动浏览器，打开 `http://localhost:2368/ghost` :链接
 
-More [install docs](http://support.ghost.org/installation/) here in case you got stuck.
+还可以参考详细的 [安装指南](http://support.ghost.org/installation/) .
 
 <a name="getting-started"></a>
-# Developer Install (from git)
+# 开发者 (从 git 下载)
 
-Install Node.js. (See [Supported Node.js versions](http://support.ghost.org/supported-node-versions/))
+下载 Node.js. (查看 [ Node.js 提供版本](http://support.ghost.org/supported-node-versions/))
 
 ```bash
-# Node v4.2+ LTS - recommended
+# Node v4.2+ LTS - 推荐
 # Node v0.10.x and v0.12.x - supported
 #
 # Choose wisely
@@ -58,7 +58,7 @@ Install grunt. No prizes here.
 npm install -g grunt-cli
 ```
 
-Install Ghost. If you're running locally, use [master](https://github.com/TryGhost/Ghost/tree/master). For production, use [stable](https://github.com/TryGhost/Ghost/tree/stable). :no_entry_sign::rocket::microscope:
+安装 Ghost。 如果你是在本地环境运行 ghost，可以使用 [master](https://github.com/TryGhost/Ghost/tree/master) 分支。如果是在生产环境运行，请使用 [stable](https://github.com/TryGhost/Ghost/tree/stable) 分支. :no_entry_sign::rocket::microscope:
 
 ```bash
 npm install
@@ -81,36 +81,36 @@ Start your engines.
 ```bash
 npm start
 
-## running production? Add --production
+## 运行 production? Add --production
 ```
 
-Congrats! You made it. BTW you can also just `npm install ghost` if you're into that sort of thing. NPM aficionados can also read up on using [Ghost as an NPM module](https://github.com/TryGhost/Ghost/wiki/Using-Ghost-as-an-npm-module).
+祝贺你，一切搞定了！顺便说一下，你还可以直接执行 `npm install ghost` 指令将 Ghost 作为 npm 包来使用。[将 Ghost 作为 NPM 模块来使用](https://github.com/TryGhost/Ghost/wiki/Using-Ghost-as-an-npm-module) 是一份很详尽的文档。
 
-More general [install docs](http://support.ghost.org/installation/) here in case you got stuck.
+还可以参考更详细的[安装指南](http://support.ghost.org/installation/) 。
 
 
-# Deploying Ghost
+
+# 部署 Ghost
 
 ![Ghost(Pro) + DigitalOcean](https://cloud.githubusercontent.com/assets/120485/8180331/d6674e32-1414-11e5-8ce4-2250e9994906.png)
 
-Save yourself time and headaches with our fully managed **[Ghost(Pro)](https://ghost.org/pricing/)** service. Deploy a new instance of Ghost in a couple of clicks running on [DigitalOcean](https://digitalocean.com)’s rock solid infrastructure, with a worldwide CDN thrown in at no extra charge.
+Ghost 官方支持的 **[Ghost(Pro)](https://ghost.org/pricing/)** 服务能够帮你节约大量时间，只需点几下鼠标就能部署一个 Ghost 实例到 [DigitalOcean](https://digitalocean.com) 的服务器上，并且还可以免费享受到全球化的 CDN 服务。
 
-All revenue from **Ghost(Pro)** goes to the Ghost Foundation, the non-profit org which funds the maintenance and further development of Ghost.
+从 **Ghost(Pro)** 所获得的所有收益都将用于 Ghost 基金 -- 一个非营利性的组织，为 Ghost 的开发和维护提供支持。
 
-[Other options](http://support.ghost.org/deploying-ghost/) are also available if you prefer playing around with servers by yourself.
+如果你希望自己部署 Ghost，可以参考[这里](http://support.ghost.org/deploying-ghost/).
 
 
-# Staying Up to Date
+# 保持更新
 
-When a new version of Ghost comes out, you'll want to look over these [upgrade instructions](http://support.ghost.org/how-to-upgrade/) for what to do next.
+当 Ghost 有新版本发布时，请参考 [升级指南](http://support.ghost.org/how-to-upgrade/) 以了解如何升级 Ghost。
 
-You can talk to other Ghost users and developers in our [public Slack team](https://ghost.org/slack/) (it's pretty awesome). We have a public meeting every Tuesday at 5:30pm UK time.
+在 [public Slack team](https://ghost.org/slack/) 与 Ghost 开发者沟通。我们每周二下午 5:30 都会在 Slack 上开碰头会。请注意，我们说的是`伦敦时间`。
 
-New releases are announced on the [dev blog](http://dev.ghost.org/tag/releases/). You can subscribe by email or follow [@TryGhost_Dev](https://twitter.com/tryghost_dev) on Twitter, if you prefer your updates bite-sized and facetious.
-
+每次有新版本都会在 [技术博客](http://dev.ghost.org/tag/releases/) 上公布。你可以通过邮件订阅或者在 Twitter 上关注 [@TryGhost_Dev](https://twitter.com/tryghost_dev)。
 :saxophone::turtle:
 
 
-# Copyright & License
+#  Copyright & License
 
 Copyright (c) 2013-2017 Ghost Foundation - Released under the [MIT license](LICENSE).

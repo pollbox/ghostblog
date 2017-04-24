@@ -69,3 +69,5 @@ CHANGELOG.md
 
 # Coverage reports
 coverage.html
+#yarn
+yarn.lock

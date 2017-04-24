@@ -239,6 +239,7 @@ ConfigManager.prototype.set = function (config) {
             // normalise the URL by removing any trailing slash
             url: this._config.url ? this._config.url.replace(/\/$/, '') : '',
             timezone: timezone
+
         },
         routeKeywords: {
             tag: 'tag',

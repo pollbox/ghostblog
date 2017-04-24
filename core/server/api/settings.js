@@ -69,6 +69,7 @@ updateConfigCache = function () {
             permalinks: (settingsCache.permalinks && settingsCache.permalinks.value) || '/:slug/',
             twitter: (settingsCache.twitter && settingsCache.twitter.value) || '',
             facebook: (settingsCache.facebook && settingsCache.facebook.value) || '',
+            weibo: (settingsCache.weibo && settingsCache.weibo.value) || '',
             timezone: (settingsCache.activeTimezone && settingsCache.activeTimezone.value) || config.theme.timezone,
             amp: (settingsCache.amp && settingsCache.amp.value === 'true')
         },

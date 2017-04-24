@@ -18,6 +18,7 @@ coreHelpers.date  = require('./date');
 coreHelpers.encode  = require('./encode');
 coreHelpers.excerpt  = require('./excerpt');
 coreHelpers.facebook_url = require('./facebook_url');
+coreHelpers.weibo_url = require('./weibo_url');
 coreHelpers.foreach = require('./foreach');
 coreHelpers.get = require('./get');
 coreHelpers.ghost_foot = require('./ghost_foot');
