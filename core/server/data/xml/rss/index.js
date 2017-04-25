@@ -1,5 +1,5 @@
 var crypto      = require('crypto'),
-    downsize    = require('downsize'),
+    downsize    = require('blogdownsize'),
     RSS         = require('rss'),
     config      = require('../../../config'),
     errors      = require('../../../errors'),

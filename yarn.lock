@@ -174,15 +174,9 @@ async@1.x, async@^1.4.0, async@^1.5.0, async@^1.5.2, async@~1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@2.1.4:
+async@2.1.4, async@^2.0.0:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/async/-/async-2.1.4.tgz#2d2160c7788032e4dd6cbe2502f1f9a2c8f6cde4"
-  dependencies:
-    lodash "^4.14.0"
-
-async@^2.0.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.3.0.tgz#1013d1051047dd320fe24e494d5c66ecaf6147d9"
   dependencies:
     lodash "^4.14.0"
 
@@ -277,6 +271,12 @@ block-stream@*:
   resolved "https://registry.yarnpkg.com/block-stream/-/block-stream-0.0.9.tgz#13ebfe778a03205cfe03751481ebb4b3300c126a"
   dependencies:
     inherits "~2.0.0"
+
+blogdownsize@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/blogdownsize/-/blogdownsize-0.1.0.tgz#7b7e1d5381efd9f4ad22f6035c7d5029c3868eda"
+  dependencies:
+    xregexp "2.0.0"
 
 bluebird@3.4.6:
   version "3.4.6"
@@ -899,12 +899,6 @@ domutils@1.5, domutils@1.5.1, domutils@^1.5.1:
   dependencies:
     dom-serializer "0"
     domelementtype "1"
-
-downsize@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/downsize/-/downsize-0.0.8.tgz#21435a610c8c68220f5cc31474979b4d025f038e"
-  dependencies:
-    xregexp "2.0.0"
 
 dtrace-provider@~0.6:
   version "0.6.0"

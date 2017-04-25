@@ -8,7 +8,7 @@
 
 var hbs             = require('express-hbs'),
     _               = require('lodash'),
-    downsize        = require('downsize'),
+    downsize        = require('blogdownsize'),
     downzero        = require('../utils/downzero'),
     content;
 

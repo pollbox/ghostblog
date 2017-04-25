@@ -1,4 +1,4 @@
-var downsize = require('downsize');
+var downsize = require('blogdownsize');
 
 function getExcerpt(html, truncateOptions) {
     truncateOptions = truncateOptions || {};

@@ -3,9 +3,9 @@
   "version": "0.11.7",
   "description": "Just a blogging platform.",
   "author": {
-      "name": "pollbox",
-      "email": "pollbox@dingtalk.com",
-      "url": "https://ghostblog.cn"
+    "name": "pollbox",
+    "email": "pollbox@dingtalk.com",
+    "url": "https://ghostblog.cn"
   },
   "homepage": "http://ghost.org",
   "keywords": [
@@ -33,6 +33,7 @@
     "amperize": "0.3.4",
     "archiver": "1.3.0",
     "bcryptjs": "2.4.3",
+    "blogdownsize": "^0.1.0",
     "bluebird": "3.4.7",
     "body-parser": "1.16.0",
     "bookshelf": "0.10.2",
@@ -43,7 +44,6 @@
     "cookie-session": "1.2.0",
     "cors": "2.8.1",
     "csv-parser": "1.11.0",
-    "downsize": "0.0.8",
     "express": "4.14.1",
     "express-hbs": "1.0.4",
     "extract-zip-fork": "1.5.1",
@@ -109,8 +109,8 @@
     "rewire": "2.5.2",
     "should": "11.2.0",
     "should-http": "0.1.0",
-    "supertest": "3.0.0",
     "sinon": "1.17.7",
+    "supertest": "3.0.0",
     "tmp": "0.0.31"
   },
   "greenkeeper": {
