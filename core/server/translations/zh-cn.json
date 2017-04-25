@@ -106,7 +106,7 @@
                 }
             },
             "themehandler": {
-                "missingTheme": "目前活动的主题\"{主题}\"缺少."
+                "missingTheme": "目前活动的主题\"{theme}\"缺少."
             }
         },
         "utils": {
