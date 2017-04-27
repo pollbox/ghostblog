@@ -7,6 +7,8 @@ function getCanonicalUrl(data) {
 
     if (url.indexOf('/amp/')) {
         url = url.replace(/\/amp\/$/i, '/');
+    }else if (url.indexOf('/mip/')) {
+        url = url.replace(/\/mip\/$/i, '/');
     }
     return url;
 }

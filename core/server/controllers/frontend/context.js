@@ -17,6 +17,7 @@ var config = require('../../config'),
     privatePattern = new RegExp('^\\/' + config.routeKeywords.private + '\\/'),
     subscribePattern = new RegExp('^\\/' + config.routeKeywords.subscribe + '\\/'),
     ampPattern = new RegExp('\\/' + config.routeKeywords.amp + '\\/$'),
+    mipPattern = new RegExp('\\/' + config.routeKeywords.mip + '\\/$'),
     rssPattern = new RegExp('^\\/rss\\/'),
     homePattern = new RegExp('^\\/$');
 
@@ -51,6 +52,10 @@ function setResponseContext(req, res, data) {
         res.locals.context.push('amp');
     }
 
+    // Add context 'mip' to either post or page, if we have an `*/mip` route
+    if (mipPattern.test(res.locals.relativeUrl) && data.post) {
+        res.locals.context.push('mip');
+    }
     // Each page can only have at most one of these
     if (req.channelConfig) {
         res.locals.context.push(req.channelConfig.name);

@@ -1,7 +1,7 @@
 function getOgType(data) {
     var context = data.context ? data.context[0] : null;
 
-    context = context === 'amp' ? 'post' : context;
+    context = context === 'amp'||context === 'mip' ? 'post' : context;
 
     if (context === 'author') {
         return 'profile';

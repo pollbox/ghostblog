@@ -71,6 +71,9 @@
         "amp": {
             "defaultValue": "true"
         },
+        "mip": {
+            "defaultValue": "true"
+        },
         "ghost_head": {
             "defaultValue" : ""
         },

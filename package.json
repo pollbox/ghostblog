@@ -58,6 +58,7 @@
     "jsonpath": "0.2.9",
     "knex": "0.12.5",
     "lodash": "4.17.4",
+    "miperize": "^0.1.2",
     "moment": "2.17.1",
     "moment-timezone": "0.5.9",
     "morgan": "1.7.0",

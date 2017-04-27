@@ -18,6 +18,8 @@ var getMetaData = require('../data/meta'),
     labs = require('../utils/labs'),
     api = require('../api');
 
+
+
 function getClient() {
     if (labs.isSet('publicAPI') === true) {
         return api.clients.read({slug: 'ghost-frontend'}).then(function (client) {
@@ -103,6 +105,10 @@ function ghost_head(options) {
                 head.push('<link rel="amphtml" href="' +
                     escapeExpression(metaData.ampUrl) + '" />');
             }
+            if (_.includes(context, 'post') && !_.includes(context, 'mip') && config.theme.mip) {
+                head.push('<link rel="miphtml" href="' +
+                    escapeExpression(metaData.mipUrl) + '" />');
+            }
 
             if (metaData.previousUrl) {
                 head.push('<link rel="prev" href="' +
@@ -126,7 +132,9 @@ function ghost_head(options) {
                 }
             }
 
-            if (client && client.id && client.secret && !_.includes(context, 'amp')) {
+            if (client && client.id && client.secret
+               && (!_.includes(context, 'amp')||!_.includes(context, 'mip'))
+              ) {
                 head.push(getAjaxHelper(client.id, client.secret));
             }
         }
@@ -140,7 +148,9 @@ function ghost_head(options) {
         return api.settings.read({key: 'ghost_head'});
     }).then(function (response) {
         // no code injection for amp context!!!
-        if (!_.includes(context, 'amp')) {
+        if (!_.includes(context, 'amp')
+            ||!_.includes(context, 'mip')
+          ) {
             head.push(response.settings[0].value);
         }
         return filters.doFilter('ghost_head', head);

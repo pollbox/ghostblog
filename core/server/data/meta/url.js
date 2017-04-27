@@ -1,12 +1,14 @@
 var schema = require('../schema').checks,
     config = require('../../config');
 
-// This cleans the url from any `/amp` postfixes, so we'll never
+// This cleans the url from any `/mip` postfixes, so we'll never
 // output a url with `/amp` in the end, except for the needed `amphtml`
 // canonical link, which is rendered by `getAmpUrl`.
-function sanitizeAmpUrl(url) {
+function sanitizeAmpOrMipUrl(url) {
     if (url.indexOf('/amp/') !== -1) {
         url = url.replace(/\/amp\/$/i, '/');
+    }else if (url.indexOf('/mip/') !== -1) {
+        url = url.replace(/\/mip\/$/i, '/');
     }
     return url;
 }
@@ -29,7 +31,7 @@ function getUrl(data, absolute) {
     }
 
     // sanitize any trailing `/amp` in the url
-    return sanitizeAmpUrl(config.urlFor(data, {}, absolute));
+    return sanitizeAmpOrMipUrl(config.urlFor(data, {}, absolute));
 }
 
 module.exports = getUrl;

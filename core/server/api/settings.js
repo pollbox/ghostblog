@@ -71,7 +71,8 @@ updateConfigCache = function () {
             facebook: (settingsCache.facebook && settingsCache.facebook.value) || '',
             weibo: (settingsCache.weibo && settingsCache.weibo.value) || '',
             timezone: (settingsCache.activeTimezone && settingsCache.activeTimezone.value) || config.theme.timezone,
-            amp: (settingsCache.amp && settingsCache.amp.value === 'true')
+            amp: (settingsCache.amp && settingsCache.amp.value === 'true'),
+            mip: (settingsCache.mip && settingsCache.mip.value === 'true')
         },
         labs: labsValue
     });
