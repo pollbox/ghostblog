@@ -20,7 +20,21 @@ config = {
             },
             debug: false
         },
-
+        // //设置第三存放位置
+        // storage:{
+        //   active:{
+        //     images:"qiniu"
+        //   },
+        //   ACCESS_KEY:"",
+        //   SECRET_KEY:"",
+        //   bucketname:"phpcms",
+        //   tag: "/image/",
+        //   domain: "http://7xit1i.com1.z0.glb.clouddn.com"
+        // },
+        // privacy: {  useUpdateCheck: false,
+        //             useGoogleFonts: false,
+        //             useGravatar: false
+        //         },
         server: {
             host: '127.0.0.1',
             port: '2368'
